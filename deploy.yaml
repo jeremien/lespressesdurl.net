@@ -5,22 +5,22 @@
   tasks:
     - name: Synchronize data from local to server
       synchronize:
-        src: /home/jeremie/Code/montebello.ooo/
-        dest: /home/debian/montebello.ooo
+        src: /home/jeremie/Code/lespressesdurl.net
+        dest: /home/debian/lespressesdurl.net
         delete: yes
         rsync_path: "sudo rsync"
         recursive: true
         rsync_opts:
           - "--exclude=.git"
           - "--exclude=node_modules"
-    - name: Docker down
-      shell: 
-        cmd: "docker stop montebello.ooo"
+    # - name: Docker down
+    #   shell: 
+    #     cmd: "docker stop lespressesdurl.net"
     - name: Docker build
       shell:
-        cmd: "docker build -t montebello_app ."
-        chdir: /home/debian/montebello.ooo
+        cmd: "docker build -t lespressesdurl_app ."
+        chdir: /home/debian/lespressesdurl.net
     - name: Docker up
       shell:
-        cmd: "docker run --name montebello.ooo -d -it -p 3000:3000 montebello_app"
-        chdir: /home/debian/montebello.ooo
+        cmd: "docker run --name lespressesdurl.net -d -it -p 3000:3000 lespressesdurl_app"
+        chdir: /home/debian/lespressesdurl.net
