@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "holo";
+    src: local("holo"), url(~assets/holo/NaNHoloTRIAL-Regular.woff2) format("woff2");
+}
+
+html, body, p {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "holo";
+    font-size: 1rem;
+    line-height: 1.3rem;
+  
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00ff36;
+    flex-direction: column;
+}
+
+.nav {
+    background-color: white;
+    padding: 5px;
+}
+
+.content {
+    height: 100%;
+    padding: 5px;
+    width: 60%;
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+
+a {
+    color: black;
+}
+
+p {
+    margin-top: 15px;
+}
