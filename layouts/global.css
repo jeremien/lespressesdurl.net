@@ -3,13 +3,18 @@
     src: local("holo"), url(~assets/holo/NaNHoloTRIAL-Regular.woff2) format("woff2");
 }
 
+@font-face {
+    font-family: "karrik";
+    src: local("karrik"), url(~assets/karrik/Karrik-Regular.woff2) format("woff2");
+}
+
 html, body, p {
     padding: 0;
     margin: 0;
 }
 
 html {
-    font-family: "holo";
+    font-family: "karrik";
     font-size: 1rem;
     line-height: 1.3rem;
   
@@ -19,19 +24,21 @@ html {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #00ff36;
+    background-color: #00ff4069;
     flex-direction: column;
 }
 
 .nav {
     background-color: white;
-    padding: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .content {
     height: 100%;
-    padding: 5px;
-    width: 60%;
+    padding-left: 15px;
+    width: 80%;
     font-size: 2rem;
     line-height: 2.1rem;
 }
@@ -42,4 +49,14 @@ a {
 
 p {
     margin-top: 15px;
+}
+
+ol {
+    list-style: none;
+    padding-left: 15px;
+
+}
+
+li {
+    margin-bottom: 15px;
 }
