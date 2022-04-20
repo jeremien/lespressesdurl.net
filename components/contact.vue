@@ -1,5 +1,5 @@
 <template>
     <div class="content">
-        <p><a href="mailto:ecrire@lespressesdurl.net">ecrire@lespressesdurl.net</a></p>
+        <p>ecrire(at)lespressesdurl.net</p>
     </div>
 </template>
