@@ -1,5 +1,8 @@
 deploy.yaml
 
+assets/holo
+assets/karrik
+
 *.woff2
 
 # Created by .ignore support plugin (hsz.mobi)
